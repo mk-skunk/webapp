@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+<head>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Exported from Notepad++</title>
+<style type="text/css">
+span {
+	font-family: 'Courier New';
+	font-size: 10pt;
+	color: #000000;
+}
+.sc0 {
+}
+</style>
+</head>
+<body>
+<div style="float: left; white-space: pre; line-height: 1; background: #FFFFFF; "><span class="sc0">// Initialize Leaflet map
+var map = L.map('map').setView([-1.3703, 37.9839], 12); // Set initial coordinates and zoom level
+
+// Add a tile layer (you can choose any provider)
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&amp;copy; OpenStreetMap contributors'
+}).addTo(map);
+
+// Example marker with custom popup
+var marker = L.marker([-1.3703, 37.9839]).addTo(map); // Add marker at specific coordinates
+marker.bindPopup("&lt;b&gt;Kitui&lt;/b&gt;&lt;br&gt;A county in Kenya.").openPopup(); // Customize popup content
+</span></div></body>
+</html>
